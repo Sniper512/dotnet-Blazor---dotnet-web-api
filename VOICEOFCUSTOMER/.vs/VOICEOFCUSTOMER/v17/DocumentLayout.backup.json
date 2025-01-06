@@ -1,0 +1,205 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|c:\\users\\alimu\\desktop\\bsit-f21-es-project-sniper512-main\\voiceofcustomer\\components\\cardcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|solutionrelative:components\\cardcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4905027-9DE4-4531-933E-AC5B0498343F}|..\\Web Api\\Web Api.csproj|c:\\users\\alimu\\desktop\\bsit-f21-es-project-sniper512-main\\web api\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|c:\\users\\alimu\\desktop\\bsit-f21-es-project-sniper512-main\\voiceofcustomer\\components\\addpostcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|solutionrelative:components\\addpostcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|c:\\users\\alimu\\desktop\\bsit-f21-es-project-sniper512-main\\voiceofcustomer\\components\\editpostcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|solutionrelative:components\\editpostcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4905027-9DE4-4531-933E-AC5B0498343F}|..\\Web Api\\Web Api.csproj|c:\\users\\alimu\\desktop\\bsit-f21-es-project-sniper512-main\\web api\\models\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4905027-9DE4-4531-933E-AC5B0498343F}|..\\Web Api\\Web Api.csproj|c:\\users\\alimu\\desktop\\bsit-f21-es-project-sniper512-main\\web api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|c:\\users\\alimu\\desktop\\bsit-f21-es-project-sniper512-main\\voiceofcustomer\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|solutionrelative:pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4905027-9DE4-4531-933E-AC5B0498343F}|..\\Web Api\\Web Api.csproj|c:\\users\\alimu\\desktop\\bsit-f21-es-project-sniper512-main\\web api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|c:\\users\\alimu\\desktop\\bsit-f21-es-project-sniper512-main\\voiceofcustomer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|c:\\users\\alimu\\desktop\\bsit-f21-es-project-sniper512-main\\voiceofcustomer\\modals\\posts\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|solutionrelative:modals\\posts\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|c:\\users\\alimu\\desktop\\bsit-f21-es-project-sniper512-main\\voiceofcustomer\\modals\\posts\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DF48C27-8B65-47D3-BFBD-368BCCEDEA86}|VOICEOFCUSTOMER.csproj|solutionrelative:modals\\posts\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CardComponent.razor",
+              "DocumentMoniker": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Components\\CardComponent.razor",
+              "RelativeDocumentMoniker": "Components\\CardComponent.razor",
+              "ToolTip": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Components\\CardComponent.razor",
+              "RelativeToolTip": "Components\\CardComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T19:44:57.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\Web Api\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "..\\Web Api\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\Web Api\\Controllers\\PostController.cs",
+              "RelativeToolTip": "..\\Web Api\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T18:57:32.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\Web Api\\Models\\PostRepository.cs",
+              "RelativeDocumentMoniker": "..\\Web Api\\Models\\PostRepository.cs",
+              "ToolTip": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\Web Api\\Models\\PostRepository.cs",
+              "RelativeToolTip": "..\\Web Api\\Models\\PostRepository.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAnwFMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T17:00:51.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\Web Api\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "..\\Web Api\\Models\\Post.cs",
+              "ToolTip": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\Web Api\\Models\\Post.cs",
+              "RelativeToolTip": "..\\Web Api\\Models\\Post.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T12:30:02.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T12:53:07.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\Web Api\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Web Api\\Program.cs",
+              "ToolTip": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\Web Api\\Program.cs",
+              "RelativeToolTip": "..\\Web Api\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T12:51:15.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditPostComponent.razor",
+              "DocumentMoniker": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Components\\EditPostComponent.razor",
+              "RelativeDocumentMoniker": "Components\\EditPostComponent.razor",
+              "ToolTip": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Components\\EditPostComponent.razor",
+              "RelativeToolTip": "Components\\EditPostComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T12:48:41.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Pages\\Home.razor",
+              "RelativeToolTip": "Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T12:43:28.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Modals\\Posts\\Post.cs",
+              "RelativeDocumentMoniker": "Modals\\Posts\\Post.cs",
+              "ToolTip": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Modals\\Posts\\Post.cs",
+              "RelativeToolTip": "Modals\\Posts\\Post.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T12:32:01.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Modals\\Posts\\PostRepository.cs",
+              "RelativeDocumentMoniker": "Modals\\Posts\\PostRepository.cs",
+              "ToolTip": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Modals\\Posts\\PostRepository.cs",
+              "RelativeToolTip": "Modals\\Posts\\PostRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T12:27:36.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddPostComponent.razor",
+              "DocumentMoniker": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Components\\AddPostComponent.razor",
+              "RelativeDocumentMoniker": "Components\\AddPostComponent.razor",
+              "ToolTip": "C:\\Users\\alimu\\Desktop\\bsit-f21-es-project-Sniper512-main\\VOICEOFCUSTOMER\\Components\\AddPostComponent.razor",
+              "RelativeToolTip": "Components\\AddPostComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T20:58:28.717Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

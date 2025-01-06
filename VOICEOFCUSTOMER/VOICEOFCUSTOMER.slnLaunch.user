@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "VOICEOFCUSTOMER.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\Web Api\\Web Api.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

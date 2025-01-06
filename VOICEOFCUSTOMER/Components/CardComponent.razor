@@ -1,0 +1,136 @@
+﻿@using Web_Api.Models;
+@inject NavigationManager Navigation
+
+@code {
+    [Parameter]
+    public Post post { get; set; }
+
+    [Parameter]
+    public EventCallback<Post> DeletePostHandler { get; set; }
+
+    public void likeClickHandler(string type)
+    {
+        if (type == "like")
+            post.LikesCount += 1;
+        else if (type == "dislike")
+            post.DisLikeCount += 1;
+        else if (type == "share")
+            post.ShareCount += 1;
+    }
+
+    public void clickEdit()
+    {
+        Navigation.NavigateTo($"/editpost/{post.Id}");
+    }
+
+    public async void clickDelete()
+    {
+        await DeletePostHandler.InvokeAsync(post);
+    }
+}
+
+<div class="post-card">
+    <div class="post-header">
+        <h2>@post.Title</h2>
+        <p class="post-meta">By <strong>@post.Author</strong> | @post.PostDate</p>
+    </div>
+    <div class="post-body">
+        <p>@post.Description</p>
+    </div>
+    <div class="post-footer">
+        <div class="post-stats">
+            <div class="stars">
+                @for (int i = 0; i < post.Stars; i++)
+                {
+                    <img src="/Images/star.jpg" alt="Star" class="star-image" />
+                }
+            </div>
+            <span class="pointer" @onclick='() => likeClickHandler("like")'>👍 @post.LikesCount</span>
+            <span class="pointer" @onclick='() => likeClickHandler("dislike")'>👎 @post.DisLikeCount</span>
+            <span class="pointer" @onclick='() => likeClickHandler("share")'>🔗 @post.ShareCount</span>
+        </div>
+
+        <!-- Edit and Delete Buttons -->
+        <div class="post-actions">
+            <button @onclick="clickEdit" class="btn btn-secondary">Edit</button>
+            <button @onclick="clickDelete" class="btn btn-danger">Delete</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .post-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 16px;
+        margin: 16px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+
+    .post-header h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .post-meta {
+        font-size: 0.9rem;
+        color: #777;
+    }
+
+    .post-body p {
+        font-size: 1rem;
+        color: #444;
+        margin-top: 8px;
+    }
+
+    .post-footer {
+        margin-top: 16px;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .post-stats {
+        margin-bottom: 16px;
+    }
+
+    .stars {
+        display: flex;
+        gap: 4px;
+        margin-bottom: 8px;
+    }
+
+    .star-image {
+        width: 20px;
+        height: 20px;
+    }
+
+    .pointer {
+        cursor: pointer;
+    }
+
+    .post-actions {
+        display: flex;
+        gap: 8px;
+        margin-top: 16px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        color: white;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+    }
+</style>

@@ -1,0 +1,159 @@
+@page "/editpost/{PostId}"
+@using Web_Api.Models;
+@inject NavigationManager Navigation
+@inject HttpClient Http
+
+<PageTitle>Edit Post</PageTitle>
+
+<h3>Edit Post</h3>
+
+@if (post == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>Edit Post</h3>
+    <div class="edit-post-form">
+        <label>
+            <span>Title:</span>
+            <input type="text" @bind="post.Title" class="form-control" placeholder="Enter post title" />
+        </label>
+        <label>
+            <span>Description:</span>
+            <textarea @bind="post.Description" class="form-control" placeholder="Enter post description"></textarea>
+        </label>
+        <label>
+            <span>Type:</span>
+            <input type="text" @bind="post.Type" class="form-control" placeholder="Enter post type" />
+        </label>
+        <label>
+            <span>Status:</span>
+            <input type="text" @bind="post.Status" class="form-control" placeholder="Enter post status" />
+        </label>
+        <label>
+            <span>Stars:</span>
+            <input type="number" @bind="post.Stars" min="1" max="5" class="form-control" placeholder="Enter stars (1-5)" />
+        </label>
+        <label>
+            <span>Author:</span>
+            <input type="text" @bind="post.Author" class="form-control" placeholder="Enter author name" />
+        </label>
+        <label>
+            <span>Likes Count:</span>
+            <input type="number" @bind="post.LikesCount" class="form-control" placeholder="Enter likes count" />
+        </label>
+        <label>
+            <span>Dislikes Count:</span>
+            <input type="number" @bind="post.DisLikeCount" class="form-control" placeholder="Enter dislikes count" />
+        </label>
+        <label>
+            <span>Share Count:</span>
+            <input type="number" @bind="post.ShareCount" class="form-control" placeholder="Enter share count" />
+        </label>
+
+        <div class="buttons">
+            <button @onclick="SavePost" class="btn btn-primary">
+                <span>Edit Post</span>
+            </button>
+
+            <button @onclick="CancelEdit" class="btn btn-secondary">
+                <span>Cancel Post</span>
+            </button>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public string PostId { get; set; }
+    private Post post;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadPost();
+    }
+
+    private async Task LoadPost()
+    {
+        try
+        {
+            post = await Http.GetFromJsonAsync<Post>($"api/Post/{PostId}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading post: {ex.Message}");
+            Navigation.NavigateTo("/"); // Redirect if post not found
+        }
+    }
+
+    private async Task SavePost()
+    {
+        try
+        {
+            var response = await Http.PutAsJsonAsync($"api/Post/{PostId}", post);
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Post updated successfully!");
+                Navigation.NavigateTo("/");
+            }
+            else
+            {
+                Console.WriteLine("Error updating post.");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error saving post: {ex.Message}");
+        }
+    }
+
+    private void CancelEdit()
+    {
+        Navigation.NavigateTo("/");
+    }
+}
+
+      
+<style>
+    .edit-post-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 500px;
+    }
+
+    .form-control {
+        padding: 8px;
+        font-size: 1rem;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 1rem;
+        cursor: pointer;
+        width: 48%;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+
+</style>

@@ -1,0 +1,71 @@
+﻿<div class="modal-overlay" @onclick="CloseModal" style="@(IsOpen ? "display: block;" : "display: none;")">
+    <div class="modal-dialog" @onclick:stopPropagation>
+        <h3>Confirm Delete</h3>
+        <p>Are you sure you want to delete this post?</p>
+        <div class="button-group">
+            <button class="btn btn-danger" @onclick="ConfirmDelete">Delete</button>
+            <button class="btn btn-secondary" @onclick="CloseModal">Cancel</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public EventCallback OnConfirm { get; set; }
+    [Parameter] public EventCallback OnCancel { get; set; }
+    [Parameter] public bool IsOpen { get; set; }
+
+    private async Task ConfirmDelete()
+    {
+        await OnConfirm.InvokeAsync();
+    }
+
+    private async Task CloseModal()
+    {
+        await OnCancel.InvokeAsync();
+    }
+}
+
+<style>
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-dialog {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        color: white;
+        border: none;
+    }
+</style>

@@ -1,0 +1,61 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = VOICEOFCUSTOMER
+build_property.RootNamespace = VOICEOFCUSTOMER
+build_property.ProjectDir = C:\Users\alimu\Desktop\bsit-f21-es-project-Sniper512-main\VOICEOFCUSTOMER\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\alimu\Desktop\bsit-f21-es-project-Sniper512-main\VOICEOFCUSTOMER
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/alimu/Desktop/bsit-f21-es-project-Sniper512-main/VOICEOFCUSTOMER/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alimu/Desktop/bsit-f21-es-project-Sniper512-main/VOICEOFCUSTOMER/Components/AddPostComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZGRQb3N0Q29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alimu/Desktop/bsit-f21-es-project-Sniper512-main/VOICEOFCUSTOMER/Components/CardComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJkQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alimu/Desktop/bsit-f21-es-project-Sniper512-main/VOICEOFCUSTOMER/Components/ConfirmDeleteComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb25maXJtRGVsZXRlQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alimu/Desktop/bsit-f21-es-project-Sniper512-main/VOICEOFCUSTOMER/Components/EditPostComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFZGl0UG9zdENvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alimu/Desktop/bsit-f21-es-project-Sniper512-main/VOICEOFCUSTOMER/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alimu/Desktop/bsit-f21-es-project-Sniper512-main/VOICEOFCUSTOMER/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alimu/Desktop/bsit-f21-es-project-Sniper512-main/VOICEOFCUSTOMER/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-26qfdrgoa8
+
+[C:/Users/alimu/Desktop/bsit-f21-es-project-Sniper512-main/VOICEOFCUSTOMER/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-pv8j513r1f

@@ -1,0 +1,134 @@
+@using Web_Api.Models;
+
+@code {
+    [Parameter]
+    public EventCallback<Post> OnPostAdded { get; set; }
+    [Parameter]
+    public EventCallback OnPostCancel { get; set; }
+
+    private Post newPost = new();
+    private string newImageUrl = string.Empty;
+    private bool isSubmitting = false;
+
+    private async Task AddPost()
+    {
+        if (isSubmitting) return;
+
+        isSubmitting = true;
+
+        newPost.PostDate = DateTime.Now;
+
+        // Emit the new post to the parent component
+        await OnPostAdded.InvokeAsync(newPost);
+
+        // Reset form fields
+        ResetForm();
+    }
+
+    private void ResetForm()
+    {
+        newPost = new Post();
+        newImageUrl = string.Empty;
+        isSubmitting = false;
+    }
+
+    private async Task CancelPost()
+    {
+        ResetForm();
+        await OnPostCancel.InvokeAsync();
+    }
+}
+
+<h3>Add New Post</h3>
+<div class="add-post-form">
+    <label>
+        <span>Title:</span>
+        <input type="text" @bind="newPost.Title" class="form-control" placeholder="Enter post title" />
+    </label>
+    <label>
+        <span>Description:</span>
+        <textarea @bind="newPost.Description" class="form-control" placeholder="Enter post description"></textarea>
+    </label>
+    <label>
+        <span>Type:</span>
+        <input type="text" @bind="newPost.Type" class="form-control" placeholder="Enter post type" />
+    </label>
+    <label>
+        <span>Status:</span>
+        <input type="text" @bind="newPost.Status" class="form-control" placeholder="Enter post status" />
+    </label>
+    <label>
+        <span>Stars:</span>
+        <input type="number" @bind="newPost.Stars" min="1" max="5" class="form-control" placeholder="Enter stars (1-5)" />
+    </label>
+    <label>
+        <span>Author:</span>
+        <input type="text" @bind="newPost.Author" class="form-control" placeholder="Enter author name" />
+    </label>
+    <label>
+        <span>Likes Count:</span>
+        <input type="number" @bind="newPost.LikesCount" class="form-control" placeholder="Enter likes count" />
+    </label>
+    <label>
+        <span>Dislikes Count:</span>
+        <input type="number" @bind="newPost.DisLikeCount" class="form-control" placeholder="Enter dislikes count" />
+    </label>
+    <label>
+        <span>Share Count:</span>
+        <input type="number" @bind="newPost.ShareCount" class="form-control" placeholder="Enter share count" />
+    </label>
+
+    <div class="flex-row gap-5">
+        <button @onclick="AddPost" disabled="@isSubmitting" class="btn btn-primary">
+            @if (isSubmitting)
+            {
+                <span>Submitting...</span>
+            }
+            else
+            {
+                <span>Add Post</span>
+            }
+        </button>
+
+        <button @onclick="CancelPost" disabled="@isSubmitting" class="btn btn-secondary">
+            <span>Cancel Post</span>
+        </button>
+    </div>
+</div>
+
+<style>
+    .add-post-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 400px;
+    }
+
+    .form-control {
+        padding: 8px;
+        font-size: 1rem;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .btn {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+</style>
